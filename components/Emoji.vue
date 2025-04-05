@@ -8,10 +8,12 @@ const emojiHeight = "60px"
 </script>
 
 <template>
-	<div class="border-solid border-black border-2">
-		<img :src="imgUrl" :height="emojiSize" :width="emojiHeight" />
-		<div>
-			{{ emojiName }}
+	<div class="rounded-2xl border-2 border-solid border-black bg-amber-200">
+		<div class="m-2 flex flex-col">
+			<img class="" :src="imgUrl" :height="emojiSize" :width="emojiHeight" />
+			<div class="text-center font-bold">
+				{{ emojiName }}
+			</div>
 		</div>
 	</div>
 </template>
