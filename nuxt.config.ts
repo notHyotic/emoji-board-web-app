@@ -1,13 +1,11 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from "@tailwindcss/vite"
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
-  ssr: true,
-  css: ["~/assets/css/main.css"],
-  vite: {
-    plugins: [
-      tailwindcss() as any,
-    ],
-  },
+	compatibilityDate: "2024-11-01",
+	devtools: { enabled: true },
+	ssr: true,
+	css: ["~/assets/css/main.css"],
+	vite: {
+		plugins: [tailwindcss() as any]
+	}
 })
